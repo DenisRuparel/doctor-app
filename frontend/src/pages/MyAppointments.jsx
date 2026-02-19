@@ -17,8 +17,6 @@ const MyAppointments = () => {
         return `${day} ${months[parseInt(month, 10) - 1]} ${year}`;
     };
 
-
-
     const getUserAppointments = async () => {
         try {
             const { data } = await axios.get(backendUrl + `/api/user/appointments`, { headers: { token } });
