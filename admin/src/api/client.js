@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Get the backend URL from environment variables
-const API_BASE_URL = import.meta.env.VITE_BACKEND_URL || 'https://doctor-backend.vercel.app';
+const API_BASE_URL = import.meta.env.VITE_BACKEND_URL || 'https://backend-doctorapp.vercel.app';
 
 const apiClient = axios.create({
   baseURL: `${API_BASE_URL}/api`,
